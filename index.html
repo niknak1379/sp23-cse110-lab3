@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="Media/icon.png">
+</head>
+<body>
+    <header>
+        <h1>Team 22 First Meeting</h1>
+        <nav>
+            <ul>
+                <li><a href="#attendance">attendance list</a></li>
+                <li><a href="#agenda">agenda</a></li>
+                <li><a href="#questions">questions</a></li>
+                <li><a href="#media">media</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <h3>Senior Engineers</h3>
+                <ul>
+                    <li>Nikan</li>
+                    <li>Powell</li>
+                </ul>
+            <h3>Junior Engineers</h3>
+                <ul>
+                    <li>Saman</li>
+                    <li>Jenna</li>
+                </ul>
+        </section>
+        <hr>
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <h3>Unfinished from Last meeting</h3>
+            <ol>
+                <li>team introductions</li>
+                <li>project introduction</li>
+            </ol>
+            <h3>New Business</h3>
+            <ol>
+                <li>project deadline</li>
+                <li>layoffs</li>
+            </ol>
+        </section>
+        <hr>
+        <section id="questions">
+            <h2>Questions</h2>
+            <div class="bad-div"><span class="useless-span">Hi am I going to get fired?</span></div>
+            <p><b>Answer:</b> unfortunately <em>everyone</em> is getting laid off.<br>
+            This is due to the project <i>not</i> being <strong>profitable</strong></p>
+        </section>
+        <hr>
+        <section id="media">
+            <h2>Media</h2>
+            <img src="Media/whiteboard-example-2555d56b7edbdebd9768dddbb47a4753148fb06c2498d2682b150748bf6e6e74.jpg" alt="architecture whiteboard">
+            <audio controls autoplay>
+                <source src="Media/audio.mp3" type="audio/mpeg">
+            </audio>
+            <video controls>
+                <source src="Media/video.mp4" type="video/mp4">
+            </video>
+        </section>
+        <hr>
+        <section id="form-experiment">
+            <h2>Interest Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Software Engineering Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" placeholder="Today's date" required>
+
+                    <input type="checkbox" id="lang-java" name="languages[]" value="Java">
+                    <label for="lang-java">Java</label>
+                    <input type="checkbox" id="lang-python" name="languages[]" value="Python">
+                    <label for="lang-python">Python</label>
+                    <input type="checkbox" id="lang-js" name="languages[]" value="JavaScript">
+                    <label for="lang-js">JavaScript</label>
+
+                    <label for="frameworks">Frameworks:</label>
+                    <select id="frameworks" name="frameworks">
+                        <option value="react">React</option>
+                        <option value="angular">Angular</option>
+                        <option value="vue">Vue.js</option>
+                    </select>
+                </fieldset>
+
+                <label for="projects">Projects:</label>
+                <textarea id="projects" name="projects" placeholder="Enter your projects"></textarea>
+
+                <label for="skills">Skills:</label>
+                <input list="skill-list" id="skills" name="skills">
+                <datalist id="skill-list">
+                    <option value="Web Development">
+                    <option value="Database Management">
+                </datalist>
+
+                <input type="radio" id="interests-databases" name="interests[]" value="databases">
+                <label for="interests-databases">Databases</label>
+                <input type="radio" id="interests-frontend" name="interests[]" value="frontend">
+                <label for="interests-frontend">Frontend Development</label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <p>Meeting: Project discussion<br>
+            Apr 14, 2023</p>
+    </footer>
+</body>
+</html>
